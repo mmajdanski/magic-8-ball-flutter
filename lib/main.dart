@@ -30,14 +30,9 @@ class _MagicBallState extends State<MagicBall> {
         title: Text('Ask Me Anything'),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            FlatButton(
-              onPressed: () => newBall(),
-              child: Image.asset('images/ball$ballNum.png'),
-            )
-          ],
+        child: FlatButton(
+          onPressed: () => newBall(),
+          child: Image.asset('images/ball$ballNum.png'),
         ),
       ),
     );
